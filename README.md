@@ -14,7 +14,9 @@ The app displays a prediction: Cat or Dog.
 Results
 
 Accuracy: ~69%
+
 Precision/Recall/F1: ~0.69 for both classes
+
 Test size: 5000 images
 
 Dataset
