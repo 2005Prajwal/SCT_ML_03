@@ -31,7 +31,7 @@ if uploaded_file is not None:
     img = Image.open(uploaded_file)
     
     # Display uploaded image
-    st.image(img, caption='Uploaded Image', use_column_width=True)
+    st.image(img, caption='Uploaded Image', use_container_width=True)
     
     # Preprocess for model
     # Resize image to the size used during training
@@ -40,5 +40,7 @@ if uploaded_file is not None:
 
     # Make prediction
     prediction = model.predict(img_array)[0]
-    
-    st.write(f"Prediction: **{prediction.upper()}**")
+
+    # Map numeric output to readable labels
+    labels = {0: "Cat", 1: "Dog"}  # adjust based on your training labels
+    st.write(f"Prediction: **{labels[prediction]}**")
