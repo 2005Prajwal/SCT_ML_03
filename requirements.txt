@@ -1,8 +1,5 @@
+streamlit
 numpy
 scikit-learn
-opencv-python
-scikit-image
-matplotlib
 joblib
-tqdm
-pandas
+pillow
