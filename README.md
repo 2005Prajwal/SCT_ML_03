@@ -7,8 +7,11 @@ A web application built with Streamlit that predicts whether an uploaded image i
 How it Works
 
 Upload an image (JPG/PNG).
+
 The image is resized to 64x64 and converted into a numerical array.
+
 Features are fed into a pre-trained Linear SVM model saved as cat_dog_svm.pkl.
+
 The app displays a prediction: Cat or Dog.
 
 Results
